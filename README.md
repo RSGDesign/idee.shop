@@ -1,7 +1,29 @@
 # Idee.Shop
 
-Aplicație de portofoliu pentru organizarea ideilor, execuția task-urilor și urmărirea rezultatelor. Stack: Next.js, TypeScript și SQLite. Include calendar, timp de lucru, statistici financiare și integrare MCP.
-Un spațiu pentru idei, task-uri, note și rezultatele lor financiare. Next.js, TypeScript, Tailwind, SQLite, conturi și sesiuni pe server. Marketplace-ul rămâne pentru o etapă ulterioară.
+Idee.Shop te ajută să transformi o idee într-un proiect pe care îl poți urmări. Notezi ce vrei să faci, împarți proiectul în task-uri, programezi lucrul și vezi cât timp și câți bani ai investit.
+
+- **Idei și proiecte** cu stadii, categorii, obiective și un frigider virtual pentru ideile fixate.
+- **Task-uri și subpași** cu priorități, etichete, estimări, filtre, reordonare și progres.
+- **Calendar** pe zi, săptămână sau lună, cu sesiuni de lucru, recurențe și sincronizare manuală opțională către Google Calendar.
+- **Timp și rezultate** cu cronometru pe idee, total lucrat, tarif orar editabil, venituri, cheltuieli, profit și prag de rentabilitate în RON.
+- **Pagini și note** cu blocuri, subpagini, proprietăți și formulare cu răspunsuri afișate în tabel sau carduri.
+- **Integrare MCP opțională** pentru agenți precum Hermes, cu acces pe cont la idei, task-uri și programări.
+
+Proiectul folosește Next.js, TypeScript, Tailwind CSS și SQLite. Conturile și colecțiile se păstrează în baza de date a instanței.
+
+## Capturi din pagina de prezentare
+
+**Pagina de start**
+
+![Idee.Shop — pagina de prezentare](docs/screenshots/landing-hero.jpg)
+
+**Cum funcționează**
+
+![De la idee și task-uri la programare și rezultate financiare](docs/screenshots/landing-flow.jpg)
+
+**Previzualizare cu date demonstrative**
+
+![Macheta dashboardului cu idei, task-uri, programări și profit](docs/screenshots/landing-preview.jpg)
 
 ## Pornire pe Mac
 Node 24 LTS sau mai nou (vezi .nvmrc):

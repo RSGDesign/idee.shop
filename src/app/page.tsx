@@ -7,7 +7,7 @@ import styles from "./landing.module.css";
 
 const title = "Idee.Shop — Dă ideilor tale un viitor";
 const description =
-  "Organizează-ți ideile pe stadii cu drag & drop, măsoară timpul de lucru cu cronometru pe pași, programează-ți orele în calendarul pe zi, săptămână sau lună și calculează-ți rentabilitatea în RON.";
+  "Organizează-ți ideile pe stadii cu drag & drop, măsoară timpul de lucru cu cronometru pe idee, programează-ți orele în calendarul pe zi, săptămână sau lună și calculează-ți rentabilitatea în RON.";
 
 export const metadata: Metadata = {
   title,
@@ -49,8 +49,8 @@ const features = [
     "Planifică-ți timpul așa cum lucrezi: vezi agenda pe zi, săptămână sau lună, programează idei și pași la ore precise cu interval start–sfârșit și gestionează sesiuni multiple.",
   ],
   [
-    "Cronometru integrat pe pași",
-    "Măsoară durata reală a fiecărui task cu un cronometru simplu (Start / Pauză / Salvare). Știi cu exactitate cât efort investești și elimini aproximările.",
+    "Cronometru integrat pe idee",
+    "Înregistrează timpul lucrat pe fiecare idee. Compară estimările cu timpul efectiv și calculează valoarea lui la tariful tău orar.",
   ],
   [
     "Calculator Break-Even & Finanțe RON",
@@ -113,7 +113,7 @@ export default function LandingPage() {
               </h1>
               <p className={styles.lead}>
                 Un spațiu complet în care îți aduni ideile, le organizezi pe
-                stadii cu drag & drop, le lucrezi cu cronometru pe pași și le
+                stadii cu drag & drop, le lucrezi cu cronometru pe idee și le
                 programezi în calendarul pe zi, săptămână sau lună. Vezi exact
                 cât timp investești și ce profit aduce fiecare inițiativă.
               </p>
@@ -126,7 +126,8 @@ export default function LandingPage() {
                 </a>
               </div>
               <p className={styles.localBadge}>
-                Tablou stadii · Calendar complet · Cronometru pași · Break-Even
+                Tablou stadii · Calendar complet · Cronometru pe idee ·
+                Break-Even
               </p>
             </div>
             <div className={styles.heroArt} aria-hidden="true">
@@ -289,9 +290,22 @@ export default function LandingPage() {
                 </dl>
                 <div className={styles.previewIdeas}>
                   <article data-reveal data-card className={styles.previewIdea}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
-                      <span className={styles.previewLabel}>ÎN LUCRU · DRAG & DROP</span>
-                      <small style={{ color: "var(--muted)", fontSize: "11px" }}>Servicii</small>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      <span className={styles.previewLabel}>
+                        ÎN LUCRU · DRAG & DROP
+                      </span>
+                      <small
+                        style={{ color: "var(--muted)", fontSize: "11px" }}
+                      >
+                        Servicii
+                      </small>
                     </div>
                     <h4>Atelier de weekend</h4>
                     <p>
@@ -305,14 +319,48 @@ export default function LandingPage() {
                         <s>Pregătește primul atelier</s>
                       </span>
                     </p>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", margin: "10px 0" }}>
-                      <span style={{ fontSize: "11px", background: "var(--surface-2)", border: "1px solid var(--border)", padding: "2px 6px", borderRadius: "4px", color: "var(--accent)" }}>
-                        🕒 Cronometru: 35 min
+                    <div
+                      style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "6px",
+                        margin: "10px 0",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          background: "var(--surface-2)",
+                          border: "1px solid var(--border)",
+                          padding: "2px 6px",
+                          borderRadius: "4px",
+                          color: "var(--accent)",
+                        }}
+                      >
+                        🕒 Sesiune de lucru: 35 min
                       </span>
-                      <span style={{ fontSize: "11px", background: "var(--surface-2)", border: "1px solid var(--border)", padding: "2px 6px", borderRadius: "4px", color: "var(--text)" }}>
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          background: "var(--surface-2)",
+                          border: "1px solid var(--border)",
+                          padding: "2px 6px",
+                          borderRadius: "4px",
+                          color: "var(--text)",
+                        }}
+                      >
                         📅 Miercuri: 14:00 – 16:30
                       </span>
-                      <span style={{ fontSize: "11px", background: "var(--surface-2)", border: "1px solid var(--border)", padding: "2px 6px", borderRadius: "4px", color: "var(--ok)" }}>
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          background: "var(--surface-2)",
+                          border: "1px solid var(--border)",
+                          padding: "2px 6px",
+                          borderRadius: "4px",
+                          color: "var(--ok)",
+                        }}
+                      >
                         ⚖ Prag: 1 vânzare (200 RON)
                       </span>
                     </div>
@@ -329,9 +377,20 @@ export default function LandingPage() {
                     style={{ "--reveal-delay": "60ms" } as React.CSSProperties}
                     className={`${styles.previewIdea} ${styles.secondIdea}`}
                   >
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        marginBottom: "8px",
+                      }}
+                    >
                       <span className={styles.previewLabel}>NOUĂ</span>
-                      <small style={{ color: "var(--muted)", fontSize: "11px" }}>Conținut</small>
+                      <small
+                        style={{ color: "var(--muted)", fontSize: "11px" }}
+                      >
+                        Conținut
+                      </small>
                     </div>
                     <h4>Ghidul cartierului meu</h4>
                     <p>
@@ -342,11 +401,36 @@ export default function LandingPage() {
                       <span aria-hidden="true">○</span> Alege primele cinci
                       locuri
                     </p>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", margin: "10px 0" }}>
-                      <span style={{ fontSize: "11px", background: "var(--surface-2)", border: "1px solid var(--border)", padding: "2px 6px", borderRadius: "4px", color: "var(--accent)" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "6px",
+                        margin: "10px 0",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          background: "var(--surface-2)",
+                          border: "1px solid var(--border)",
+                          padding: "2px 6px",
+                          borderRadius: "4px",
+                          color: "var(--accent)",
+                        }}
+                      >
                         📅 Programat: Sâmbătă 10:00
                       </span>
-                      <span style={{ fontSize: "11px", background: "var(--surface-2)", border: "1px solid var(--border)", padding: "2px 6px", borderRadius: "4px", color: "var(--muted)" }}>
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          background: "var(--surface-2)",
+                          border: "1px solid var(--border)",
+                          padding: "2px 6px",
+                          borderRadius: "4px",
+                          color: "var(--muted)",
+                        }}
+                      >
                         🕒 Estimat: 2 ore
                       </span>
                     </div>
@@ -358,7 +442,8 @@ export default function LandingPage() {
                 </div>
               </div>
               <figcaption className={styles.previewCaption}>
-                Date de exemplu. Descoperă în aplicație cum se îmbină tabloul pe stadii, calendarul flexibil și calculatorul break-even.
+                Date de exemplu. Descoperă în aplicație cum se îmbină tabloul pe
+                stadii, calendarul flexibil și calculatorul break-even.
               </figcaption>
             </figure>
           </section>
@@ -378,19 +463,29 @@ export default function LandingPage() {
             </div>
             <ul>
               <li>
-                <strong>Tablou pe stadii & Drag & Drop.</strong> Organizezi fluxul de lucru în coloane clare și muți ideile instantaneu între Nouă, În lucru și Finalizată.
+                <strong>Tablou pe stadii & Drag & Drop.</strong> Organizezi
+                fluxul de lucru în coloane clare și muți ideile instantaneu
+                între Nouă, În lucru și Finalizată.
               </li>
               <li>
-                <strong>Calendar complet (Zi, Săptămână, Lună).</strong> Programezi idei și pași la ore exacte cu interval start–sfârșit și gestionezi sesiuni multiple de lucru.
+                <strong>Calendar complet (Zi, Săptămână, Lună).</strong>{" "}
+                Programezi idei și pași la ore exacte cu interval start–sfârșit
+                și gestionezi sesiuni multiple de lucru.
               </li>
               <li>
-                <strong>Cronometru de lucru pe pași.</strong> Măsori cu precizie timpul dedicat fiecărui task și compari orele estimate cu cele efectiv investite.
+                <strong>Cronometru de lucru pe idee.</strong> Măsori timpul
+                dedicat fiecărei idei și compari orele estimate cu cele efectiv
+                investite.
               </li>
               <li>
-                <strong>Rentabilitate & Calculator Break-Even.</strong> Calculezi automat câte unități trebuie să vinzi pentru a-ți acoperi costurile fixe.
+                <strong>Rentabilitate & Calculator Break-Even.</strong>{" "}
+                Calculezi automat câte unități trebuie să vinzi pentru a-ți
+                acoperi costurile fixe.
               </li>
               <li>
-                <strong>Salvare automată & Confidențialitate.</strong> Toate ideile și sesiunile tale sunt salvate automat, private, cu export JSON oricând ai nevoie de un backup.
+                <strong>Salvare automată & Confidențialitate.</strong> Toate
+                ideile și sesiunile tale sunt salvate automat, private, cu
+                export JSON oricând ai nevoie de un backup.
               </li>
             </ul>
           </section>
