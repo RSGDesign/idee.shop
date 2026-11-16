@@ -1,0 +1,4 @@
+# Gemini / Google Antigravity
+Citește AGENTS.md, docs/HANDOFF.md și docs/ECC.md. Deschide ~/Desktop/idee.shop ca workspace.
+ECC 2.2.3 este instalat cu profilul full și toate cele 314 skill-uri în layout-ul nativ Antigravity 2.0: .agents/rules, workflows, skills și agents. Începe o conversație nouă după instalare și verifică Settings > Customizations. Skill-urile se cer prin nume, iar workflow-urile prin /plan, /tdd, /code-review, /verify etc., conform versiunii instalate a aplicației. Compatibilitatea layout-ului este verificată prin ECC doctor; încărcarea efectivă în Antigravity nu a fost verificată în UI.
+Aplică limitele proiectului înaintea exemplelor ECC. Nu executa automat scripturi, nu activa MCP/hook-uri și nu configura cloud. ECC_ROOT local este .ecc/upstream după npm run ecc:restore. La final actualizează HANDOFF, TASKS și CHANGELOG.

@@ -1,0 +1,41 @@
+{
+  "name": "idee-shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NEXT_TELEMETRY_DISABLED=1 next dev --webpack --hostname 127.0.0.1",
+    "build": "NEXT_TELEMETRY_DISABLED=1 next build --webpack",
+    "start": "NEXT_TELEMETRY_DISABLED=1 next start --hostname 127.0.0.1",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build",
+    "ecc:restore": "node scripts/ecc.mjs restore",
+    "ecc:plan": "node scripts/ecc.mjs plan",
+    "ecc:install": "node scripts/ecc.mjs install",
+    "ecc:doctor": "node scripts/ecc.mjs doctor",
+    "db:backup": "node --experimental-strip-types scripts/backup-db.ts",
+    "admin:setup": "node --experimental-strip-types scripts/admin-setup.ts",
+    "mcp:key": "node --env-file-if-exists=.env.local --experimental-strip-types scripts/mcp-key.ts"
+  },
+  "dependencies": {
+    "next": "16.4.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.4",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.5",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "type": "module"
+}

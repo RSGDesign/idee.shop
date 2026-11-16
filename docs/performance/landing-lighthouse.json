@@ -1,0 +1,31 @@
+{
+  "url": "http://127.0.0.1:3000/",
+  "lighthouseVersion": "13.6.0",
+  "performance": 100,
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+  "metrics": {
+    "first-contentful-paint": {
+      "value": 923.652,
+      "display": "0.9 s"
+    },
+    "largest-contentful-paint": {
+      "value": 923.652,
+      "display": "0.9 s"
+    },
+    "total-blocking-time": {
+      "value": 66,
+      "display": "70 ms"
+    },
+    "cumulative-layout-shift": {
+      "value": 0,
+      "display": "0"
+    },
+    "speed-index": {
+      "value": 1937.1448339782235,
+      "display": "1.9 s"
+    }
+  },
+  "note": "Lighthouse CLI temporar, Chromium din Brave; nu verificare manuală Google Chrome. Ajustarea ulterioară este exclusiv position: relative pentru săgețile statice dintre pași."
+}

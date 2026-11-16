@@ -1,0 +1,124 @@
+.page {
+  max-width: 1440px;
+  margin: auto;
+  padding: 40px 32px;
+  color: var(--text);
+}
+.header {
+  align-items: flex-start;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav a,
+.detail a {
+  color: var(--accent);
+}
+.message {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-block: 28px;
+}
+.stats > div,
+.detail {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+.stats p {
+  color: var(--muted);
+}
+.stats strong {
+  font-size: 24px;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-block: 16px;
+}
+.page h2 {
+  font-size: 24px;
+  margin: 32px 0 20px;
+}
+.page h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.page h4 {
+  font-size: 18px;
+}
+.table {
+  overflow-x: auto;
+}
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+.table th {
+  color: var(--muted);
+}
+.detail {
+  margin-top: 24px;
+}
+.idea {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+.note {
+  white-space: pre-wrap;
+}
+.detail form {
+  max-width: 500px;
+}
+.page a:focus-visible,
+.page summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.page ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+.page summary {
+  cursor: pointer;
+  padding-block: 18px;
+}
+@media (max-width: 700px) {
+  .page {
+    padding: 24px 16px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .stats > div {
+    padding: 16px;
+  }
+  .stats strong {
+    font-size: 20px;
+  }
+  .detail {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,2 @@
+# Claude
+Citește AGENTS.md, docs/HANDOFF.md și docs/ECC.md. Catalogul complet se află în .agents/skills; citește manual skill-ul relevant dacă aplicația ta nu descoperă această cale. Agenții din .agents/agents au frontmatter Antigravity; originalele Claude sunt în .ecc/upstream/agents. Nu este instalat un plugin Claude global sau un runtime de hook-uri. Nu confunda disponibilitatea sursei complete cu activarea nativă în orice aplicație.

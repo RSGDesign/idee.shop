@@ -1,0 +1,5 @@
+# ECC pentru Codex în Idee.Shop
+Citește mai întâi AGENTS.md din rădăcină și docs/HANDOFF.md. Catalogul complet de skill-uri este în .agents/skills. Încarcă doar skill-urile relevante; nu citi întregul catalog în context.
+Regulile comune sunt în .agents/rules/common-*.md, iar pentru acest proiect folosește typescript-*, react-* și web-* la nevoie. Trigger-ele YAML din reguli aparțin Antigravity, nu reprezintă hook-uri Codex.
+Workflow-urile .agents/workflows/*.md se pot citi și executa ca proceduri; slash command-urile Claude/Antigravity nu devin automat comenzi Codex. Agenții .agents/agents sunt definiții native Antigravity; nu sunt roluri Codex. În Codex folosește instrumentele și agenții deja disponibili în sesiune, respectând politica mediului. Nu iniția delegare doar pentru că un exemplu ECC o cere.
+Sursa completă este restaurată în .ecc/upstream, cu arhivă fixată și checksum în .ecc/source.json. Nu încărca config.toml, hook-uri sau MCP din sursa upstream peste setările utilizatorului. Vezi docs/ECC.md pentru proceduri și limite.

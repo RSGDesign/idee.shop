@@ -1,0 +1,87 @@
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  color: var(--text);
+}
+.back {
+  color: var(--muted);
+  display: inline-block;
+  margin-bottom: 28px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+.card h1 {
+  font-size: 34px;
+}
+.card h2 {
+  font-size: 20px;
+  margin-block: 16px;
+}
+.card p {
+  line-height: 1.7;
+  color: var(--muted);
+}
+.card label {
+  font-weight: 600;
+}
+.remember {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.5;
+}
+.remember input {
+  width: auto;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.hint {
+  font-size: 12px;
+}
+.primary {
+  width: 100%;
+  margin-top: 12px;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
+}
+.fieldError,
+.messages {
+  color: var(--danger);
+  font-size: 13px;
+}
+.fieldError {
+  display: block;
+  margin-top: 6px;
+}
+.messages {
+  margin-top: 18px;
+}
+.recoveryLink {
+  margin-top: 16px;
+  text-decoration: underline;
+}
+.recovery {
+  border-top: 1px solid var(--border);
+  margin-top: 24px;
+}
+.page a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+@media (max-width: 480px) {
+  .page {
+    padding: 24px 16px;
+  }
+  .card {
+    padding: 22px;
+  }
+  .card h1 {
+    font-size: 28px;
+  }
+}
